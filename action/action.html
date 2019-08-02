@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Action</title>
+    <link rel="stylesheet" href="../diss.css">
+    <link rel="stylesheet" href="../genres.css">
+    <link rel="stylesheet" href="../action/action.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="myModal" class="modal tt">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="exit"><a href="homepage.html">EXIT</a></p>
+            <iframe id="vid-dynamic" class="vid" width="48%" height="48%"
+                src="https://www.youtube.com/embed/2AUmvWm5ZDQ" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark danger-color ">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">The Best</a>
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../homepage.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../genres1.html">genres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="random()">Random</a>
+
+
+                </li>
+
+
+            </ul>
+            <!-- Links -->
+            <form class="form-inline">
+                <div class="md-form my-0">
+                    <input class="form-control mr-sm-2" id="sb" type="text" onkeyup="searchm()" placeholder="Search"
+                        aria-label="Search">
+                </div>
+            </form>
+        </div>
+        <!-- Collapsible content -->
+    </nav>
+
+    <div class="bg">
+        <div class="container" id="ul">
+            <div class="reco">
+                <a class="poster trailer" id="john-wick">
+                    <span class="hidd">https://www.youtube.com/embed/2AUmvWm5ZDQ</span>
+                </a>
+                <div class="discription">
+                    <a class="trailer">
+                        <h3>John Wick</h3> <span class="hidd">https://www.youtube.com/embed/2AUmvWm5ZDQ</span>
+                    </a>
+                    <p>
+                        <h5>An ex-hit-man comes out of retirement to track down the gangsters that killed his
+                            dog and
+                            took everything from him.</h5>
+                    </p>
+                    <p> <a href="">Action</a> , <a href="">Special</a><a href=""></a></p>
+                </div>
+            </div>
+            <div class="reco">
+                <a class="poster trailer" id="Red2">
+                    <span class="hidd">https://www.youtube.com/embed/ZfB8QwYBPxY</span>
+                </a>
+                <div class="discription">
+                    <a class="trailer">
+                        <h3>Red 2</h3> <span class="hidd">https://www.youtube.com/embed/ZfB8QwYBPxY</span>
+                    </a>
+                    <p>
+                        <h5>Retired C.I.A. Agent Frank Moses (Bruce Willis) reunites his unlikely team of elite
+                            operatives for a global quest to track down a missing portable nuclear device.</h5>
+                    </p>
+                    <p> <a href="">Underrated</a> , <a href="">Action </a> , <a href="">Comedy</a></p>
+                </div>
+            </div>
+            <div class="reco">
+                <a class="poster trailer" id="Wanted">
+                    <span class="hidd">https://www.youtube.com/embed/edpEspHOeVU</span>
+                </a>
+                <div class="discription">
+                    <a class="trailer">
+                        <h3>Wanted</h3> <span class="hidd">https://www.youtube.com/embed/edpEspHOeVU</span>
+                    </a>
+                    <p>
+                        <h5>A frustrated office worker learns that he is the son of a professional assassin and that he
+                            shares his father's superhuman killing abilities.</h5>
+                    </p>
+                    <p> <a href="">Classic</a> , <a href="">Action </a>  <a href=""></a></p>
+                </div>
+            </div>
+            <div class="reco">
+                <a class="poster trailer" id="BrickM">
+                    <span class="hidd">https://www.youtube.com/embed/4CzcsN4k9FM</span>
+                </a>
+                <div class="discription">
+                    <a class="trailer">
+                        <h3>Brick mansions</h3> <span class="hidd">https://www.youtube.com/embed/4CzcsN4k9FM</span>
+                    </a>
+                    <p>
+                        <h5> An undercover Detroit cop navigates a dangerous neighborhood that's surrounded by a
+                            containment wall with the help of an ex-con in order to bring down a crime lord and his plot
+                            to devastate the entire city.</h5>
+                    </p>
+                    <p> <a href="">Underrated</a> , <a href="">Action </a> <a href=""></a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</body>
+<script src="../control.js"></script>
+<script src="../search.js"></script>
+
+</html>
